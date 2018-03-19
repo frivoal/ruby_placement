@@ -309,8 +309,10 @@ Mono-ruby is placed as follows:
 3. Since the base character and its associated ruby form a single unit
     there is no line wrapping opportunity inside a mono-ruby.
 4. <aside>
-        <h6>Relation between protruding ruby and the surrounding characters</h6>
-        <b>JIS  X 4051 では，親文字群(親文字及びそれ に付随するルビ)と，その前後に配置する 文字との関係について，ルビ文字を最大で ルビ文字の文字サイズまで，親文字群の前 後に配置する仮名にかけてよいという規定 とともに，“処理系定義として，ルビ文字 を前又は後ろの文字にかけずに配置しても よい”との規定も書かれている.</b>
+        <h6>Protruding over surrounding characters</h6>
+        The main placement method defined in JIS X 4051
+        allows some amout of overhang over the preceding and following base characters,
+        but recognize the method defined here as an allowed variant.
     </aside>
     <aside><figure>
         <img src="img/fig5.svg">
@@ -512,7 +514,8 @@ Group-ruby is placed as follows:
 5. <aside>
         <h6>Wrap opportunities in group-ruby</h6>
         As group ruby is treated as a unit, there is no wrap opportunity.
-        <b>しかし，前述したように2行に分割する例もあり，このことを考慮すると，熟語ルビと同様に，グループルビでも，親文字とルビの組合せを考慮した分割ができることが望ましいといえよう．</b>
+        However, in some exceptional cases where it is wrapped,
+        and is then processed similarly to jukugo-ruby.
     </aside>
     <aside><figure>
         <img src="img/fig15.svg">
