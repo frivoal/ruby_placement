@@ -49,7 +49,7 @@ aside {
 }
 figure img {
     display: block;
-    margin: 0 auto 1em;
+    margin: 0 auto 0;
     max-width: 100%;
 }
 
@@ -177,16 +177,34 @@ Note that the terminology is based on that defined in JLReq
 
 ### Matters considered by the simple placement rules
 
+<aside>
+    <h6>Ruby as notes</h6>
+    Notes are sometimes placed between lines
+    similarly to how ruby is laid out
+    (inter-linear notes).
+    The processing of this arrangement is not covered in this document.
+</aside>
+<aside>
+    <h6>Reference size</h6>
+    Because the size of ruby characters used in JIS X 4051 set to 1/2
+    there are many examples that use the size of the ruby character as the reference.
+    However, since ruby is not restricted to 1/2,
+    this document uses the size the base character as the reference.
+</aside>
+<aside>
+    <h6>Size of ruby characters</h6>
+    In movable type typesetting,
+    when ruby characters of size 3.5 points were not available,
+    based characters of 7 points where sometimes paired
+    with ruby characters of 4 points.
+    Also, ruby associated with large base characters,
+    such as those in titles,
+    are sometimes smaller than 1/2.
+</aside>
+
 Here are the fundamental assumptions underlying the simple placement rules.
 
-1. <aside>
-        <h6>Ruby as notes</h6>
-        Notes are sometimes placed between lines
-        similarly to how ruby is laid out
-        (inter-linear notes).
-        The processing of this arrangement is not covered in this document.
-    </aside>
-    Ruby is used to display the reading or the meaning of the base characters.
+1. Ruby is used to display the reading or the meaning of the base characters.
     I therefore consider avoiding misreadings as the number one priority.
 2. I have devised a method that attempts to reduce exceptions as much as possible.
     Therefore, there is no requirement for complex processing.
@@ -200,27 +218,10 @@ Here are the fundamental assumptions underlying the simple placement rules.
     In other words, this method calculates a position
     for the ruby relative to the base string
     that does not change depending on context.
-5. <aside>
-        <h6>Reference size</h6>
-        Because the size of ruby characters used in JIS X 4051 set to 1/2
-        there are many examples that use the size of the ruby character as the reference.
-        However, since ruby is not restricted to 1/2,
-        this document uses the size the base character as the reference.
-    </aside>
-    Generally speaking, the processing method is based on JIS X 4051
+5. Generally speaking, the processing method is based on JIS X 4051
     (the Japanese method for text layout).
     However, in some cases, optional steps are used.
-6. <aside>
-        <h6>Size of ruby characters</h6>
-        In movable type typesetting,
-        when ruby characters of size 3.5 points were not available,
-        based characters of 7 points where sometimes paired
-        with ruby characters of 4 points.
-        Also, ruby associated with large base characters,
-        such as those in titles,
-        are sometimes smaller than 1/2.
-    </aside>
-    The ruby font size is set to half of the base character's size as a default.
+6. The ruby font size is set to half of the base character's size as a default.
     However, the method supports using different sizes than 1/2.
 7. While there are cases of ruby on both sides of the base string exist,
     the method defined here only handles ruby on one side.
