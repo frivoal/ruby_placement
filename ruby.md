@@ -550,7 +550,7 @@ Jukugo-ruby is placed as follows:
         (see figure 16).
 2. <aside><figure>
         <img src="img/fig17.svg">
-        <figcaption><h6>Fig. 18</h6> Example 2 of jukugo-ruby</figcaption>
+        <figcaption><h6>Fig. 17</h6> Example 2 of jukugo-ruby</figcaption>
     </figure></aside>
     <aside><figure>
         <img src="img/fig18.svg">
