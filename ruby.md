@@ -235,7 +235,7 @@ Here are the fundamental assumptions underlying the simple placement rules.
 </figure></aside>
 Ruby may be divided into the following 3 different types,
 based on the relationship between the ruby and the base characters
-(See JLReq “3.3.1 Usage of Ruby”).
+(see JLReq “3.3.1 Usage of Ruby”).
 
 1. Mono-ruby
 2. Jukugo-ruby
@@ -270,11 +270,11 @@ and their placement in the inline direction relative to the base characters is a
 2. In vertical text, ruby is placed to the right of the base characters,
     and the character frame of the ruby is placed flush
     against the character frame of the base characters.
-    (See figure 2)
+    (see figure 2)
 3. In horizontal text, ruby is placed to the top of the base characters,
     and the character frame of the ruby is placed flush
     against the character frame of the base characters.
-    (See figure 3)
+    (see figure 3)
 
 The following sections describe in detail the placement of
 mono-ruby,
@@ -302,7 +302,7 @@ Mono-ruby is placed as follows:
     or Western characters (cl-27)
     which have their own individual width,
     they are placed based on each character's metrics.
-    (See figure 4)
+    (see figure 4)
 2. The center of the ruby string and of the base character string
      are aligned in the inline direction.
      (see figure 5).
@@ -513,13 +513,14 @@ Group-ruby is placed as follows:
     the processing is also identical to that of mono-ruby.
 5. <aside>
         <h6>Wrap opportunities in group-ruby</h6>
-        As group ruby is treated as a unit, there is no wrap opportunity.
+        As group-ruby is treated as a unit, there is no wrap opportunity.
         However, in some exceptional cases where it is wrapped,
-        and is then processed similarly to jukugo-ruby.
+        and is then processed similarly to jukugo-ruby
+	(see figure 15).
     </aside>
     <aside><figure>
         <img src="img/fig15.svg">
-        <figcaption><h6>Fig. 15</h6> Example wrapping group-ruby</figcaption>
+        <figcaption><h6>Fig. 15</h6> Wrapping group-ruby</figcaption>
     </figure></aside>
     In the case of group ruby,
     the base character string and its associated ruby string
