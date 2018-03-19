@@ -50,6 +50,7 @@ aside {
 figure img {
     display: block;
     margin: 0 auto 1em;
+    max-width: 100%;
 }
 
 /* Body Text */
