@@ -1,0 +1,122 @@
+/* Page layout*/
+html { padding: 2em; }
+@media print { html { padding: 1em; } }
+@page {
+	size: A4;
+	margin: 5em 3em;
+	@bottom-center { content: counter(page); }
+}
+
+/* Titles */
+h1 {
+    margin-bottom: 3em;
+    clear: right;
+}
+h2 { margin: 2rem 0 0; }
+h3 { margin: 2rem 0 1rem; }
+h2+h3 { margin-top: 0.5rem; }
+h6 {
+    font-size: inherit;
+    font-weight: bold;
+    display: inline;
+    display: run-in;
+    padding-right: 1em;
+    margin: 0;
+}
+
+/*Figures and asides */
+body {
+    max-width: 32em;
+    padding-right: 17em;
+    margin: 1em auto;
+}
+aside > figure { margin: 0; }
+aside {
+    clear: both;
+    float: right;
+    width: 15em;
+    margin-right: -17em;
+    margin-bottom: 1em;
+    break-inside: avoid;
+    hyphens: auto;
+}
+@media screen and (max-width: 35em) {
+    aside {
+        margin-right: -2em;
+        margin-left: 2em;
+        width: 10em;
+        border-top: 0.5px dotted gray;
+    } 
+    body { padding-right: 4em; }
+}
+figure img {
+    display: block;
+    margin: 0 auto 0;
+    max-width: 100%;
+}
+
+/* Body Text */
+body > p {
+    margin: 0;
+    text-indent: 1em;
+}
+
+/* Lists */
+ol, ul { padding: 0; margin: 0; }
+li {
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+li > p:first-of-type { margin-top: 0; }
+li > p:last-of-type { margin-bottom: 0; }
+
+/* Micro-typography */
+.name { font-variant: small-caps; }
+
+/* Fragmentation */
+h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+}
+.nobreak {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+/* Abbr */
+@media print {
+    abbr::after {
+        white-space: pre-wrap;
+        content: " (" attr(title) ")";
+	text-decoration: none;
+    }
+}
+
+/* links */
+:visited,
+:link {
+    color: inherit;
+    text-decoration: underline solid #008CD6;
+}
+
+/* ToC */
+@media screen {
+    #table-of-contents,
+    #markdown-toc {
+        display: none;
+    }
+}
+#markdown-toc :visited:not(:hover),
+#markdown-toc :link:not(:hover) {
+    text-decoration: none;
+}
+#markdown-toc a::after {
+	float: right;
+	content: target-counter(attr(href url), page);
+}
+#markdown-toc li { list-style: none; }
+#markdown-toc { page-break-after: always; break-after: page; }
+
+/* Utils */
+b {color: red}
+
