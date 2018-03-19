@@ -47,6 +47,10 @@ aside {
     } 
     body { padding-right: 4em; }
 }
+figure img {
+    display: block;
+    margin: 0 auto 1em;
+}
 
 /* Body Text */
 body > p {
@@ -224,11 +228,7 @@ Here are the fundamental assumptions underlying the simple placement rules.
 ### Types of ruby
 
 <aside><figure>
-<!--
-Example of mono-ryby
-Example of jukugo-ruby
-Example of group-ruby
--->
+    <img src="img/fig1.svg">
     <figcaption><h6>Fig. 1</h6> Types of ruby</figcaption>
 </figure></aside>
 Ruby may be divided into the following 3 different types,
@@ -253,13 +253,11 @@ Each is used when specified.
 ### Ruby character size and character placement
 
 <aside><figure>
-<!--
-Character frame
-Character frames are set flush against each other
--->
+    <img src="img/fig2.svg">
     <figcaption><h6>Fig. 2</h6> Example of vertical ruby</figcaption>
 </figure></aside>
 <aside><figure>
+    <img src="img/fig3.svg">
     <figcaption><h6>Fig. 3</h6> Example of horizontal ruby</figcaption>
 </figure></aside>
 The size of the ruby characters
@@ -288,6 +286,7 @@ it is explained last.
 Mono-ruby is placed as follows:
 
 1. <aside><figure>
+        <img src="img/fig4.svg">
         <figcaption><h6>Fig. 4</h6> Example mono-ruby with western characters</figcaption>
     </figure></aside>
     When the ruby is made of 2 or more characters,
@@ -312,9 +311,11 @@ Mono-ruby is placed as follows:
         <b>JIS  X 4051 では，親文字群(親文字及びそれ に付随するルビ)と，その前後に配置する 文字との関係について，ルビ文字を最大で ルビ文字の文字サイズまで，親文字群の前 後に配置する仮名にかけてよいという規定 とともに，“処理系定義として，ルビ文字 を前又は後ろの文字にかけずに配置しても よい”との規定も書かれている.</b>
     </aside>
     <aside><figure>
+        <img src="img/fig5.svg">
         <figcaption><h6>Fig. 5</h6> Example 1 of mono-ruby protruding</figcaption>
     </figure></aside>
     <aside><figure>
+        <img src="img/fig6.svg">
         <figcaption><h6>Fig. 6</h6> Example 2 of mono-ruby protruding</figcaption>
     </figure></aside>
     When the ruby string is longer than the base character string,
@@ -363,15 +364,11 @@ Mono-ruby is placed as follows:
         (e.g. if it was reduced from half to a quarter em,
         hang at most a quarter em).
 5. <aside><figure>
-        <!--
-        line start
-        -->
+        <img src="img/fig7.svg">
         <figcaption><h6>Fig. 7</h6> Example of mono-ruby at the line start</figcaption>
     </figure></aside>
     <aside><figure>
-        <!--
-        line end
-        -->
+        <img src="img/fig8.svg">
         <figcaption><h6>Fig. 8</h6> Example of mono-ruby at the line end</figcaption>
     </figure></aside>
     When the ruby string is longer than the base character string,
@@ -404,6 +401,7 @@ Group-ruby is placed as follows:
     without any inter-letter spacing:
 
     * <aside><figure>
+            <img src="img/fig9.svg">
             <figcaption><h6>Fig. 9</h6> Example 1 of group-ruby</figcaption>
         </figure></aside>
         When their respective lengths would be the same,
@@ -411,17 +409,11 @@ Group-ruby is placed as follows:
         and placed such that their respective centers in the inline direction are aligned
         (see figure 9).
     * <aside><figure>
-            <!--
-            1/4 of the base character size
-            1/2 of the base character size
-            1/4 of the base character size
-            -->
+            <img src="img/fig10.svg">
             <figcaption><h6>Fig. 10</h6> Example 2 of group-ruby</figcaption>
         </figure></aside>
         <aside><figure>
-            <!--
-            1/2 of the base character size
-            -->
+            <img src="img/fig11.svg">
             <figcaption><h6>Fig. 11</h6> Example 3 of group-ruby</figcaption>
         </figure></aside>
         When the ruby string is shorter than the base character string,
@@ -437,11 +429,7 @@ Group-ruby is placed as follows:
         and the space inserted between each ruby character is enlarged to compensate
         (see figure 11).
     * <aside><figure>
-            <!--
-            1/4 of the base character size
-            1/2 of the base character size
-            1/4 of the base character size
-            -->
+            <img src="img/fig12.svg">
             <figcaption><h6>Fig. 12</h6> Example 4 of group-ruby</figcaption>
         </figure></aside>
         When the ruby string is longer than the base character string,
@@ -453,6 +441,7 @@ Group-ruby is placed as follows:
         is twice the size of the space inserted at the end and at the start
         (see figure 12).
 2. <aside><figure>
+        <img src="img/fig13.svg">
         <figcaption><h6>Fig. 13</h6> Example of ruby with western characters</figcaption>
     </figure></aside>
     When the base character string is composed of characters like
@@ -507,6 +496,7 @@ Group-ruby is placed as follows:
         The size of the space inserted between each of the base characters
         is twice the size of the space inserted at the end and at the start.
 4. <aside><figure>
+        <img src="img/fig14.svg">
         <figcaption><h6>Fig. 14</h6> Example of protruding group-ruby</figcaption>
     </figure></aside>
     When the ruby string is longer than the base character string and protrudes,
@@ -532,7 +522,8 @@ Group-ruby is placed as follows:
 Jukugo-ruby is placed as follows:
 
 1. <aside><figure>
-        <figcaption><h6>Fig. 15</h6> Example 1 of jukugo-ruby</figcaption>
+        <img src="img/fig16.svg">
+        <figcaption><h6>Fig. 16</h6> Example 1 of jukugo-ruby</figcaption>
     </figure></aside>
     With jukugo-ruby, each base character is associated with its own ruby string.
     When the length of each of these ruby string laid out without inter-letter spacing
@@ -542,21 +533,23 @@ Jukugo-ruby is placed as follows:
     * When the ruby string associated with an individual base character is 1 character long,
         the ruby character and the base character
         are placed such that their respective centers in the inline direction are aligned
-        (see figure 15).
+        (see figure 16).
     * When the ruby string associated with an individual base character is 2 characters long or more,
         the ruby string is laid out without inter-letter spacing,
         and placed such that its center and the center of its base character are aligned in the inline direction
-        (see figure 15).
+        (see figure 16).
 2. <aside><figure>
-        <figcaption><h6>Fig. 16</h6> Example 2 of jukugo-ruby</figcaption>
+        <img src="img/fig17.svg">
+        <figcaption><h6>Fig. 18</h6> Example 2 of jukugo-ruby</figcaption>
     </figure></aside>
     <aside><figure>
-        <figcaption><h6>Fig. 17</h6> Example 3 of jukugo-ruby</figcaption>
+        <img src="img/fig18.svg">
+        <figcaption><h6>Fig. 18</h6> Example 3 of jukugo-ruby</figcaption>
     </figure></aside>
     If even a single ruby string is longer than its corresponding base character
     when laid out without inter-letter spacing,
     the processing is identical to group-ruby
-    (see figures 16 and 17).
+    (see figures 17 and 18).
 3. With jukugo-ruby, individual base characters and their associated ruby string are treated as a unit,
     and line wrap opportunities are allowed between two base characters.
     When such a line wrap occurs,
@@ -565,13 +558,10 @@ Jukugo-ruby is placed as follows:
     conversely when several base characters that are part of the jukugo
     are placed together at the end or start of a line,
     they are process together as has be described in this section about jukugo-ruby
-    (see figure 18).
+    (see figure 19).
     <figure>
-        <!--
-        line start
-        line end
-        -->
-        <figcaption><h6>Fig. 18</h6> Example of wrapping jukugo-ruby</figcaption>
+        <img src="img/fig19.svg">
+        <figcaption><h6>Fig. 19</h6> Example of wrapping jukugo-ruby</figcaption>
     </figure>
 4. When the ruby string is longer than the base character string and protrudes,
     whether and how it hangs over characters preceding or following
