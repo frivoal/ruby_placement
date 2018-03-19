@@ -86,7 +86,7 @@ b {color: red}
 
 <aside>
 2018/2/25 (Toshi <span class="name">Kobayashi</span>)<br>
-Ver. 2. 2<br>
+Ver. 2.3<br>
 Translation (Florian <span class="name">Rivoal</span>)<br>
 </aside>
 
@@ -512,6 +512,10 @@ Group-ruby is placed as follows:
         As group ruby is treated as a unit, there is no wrap opportunity.
         <b>しかし，前述したように2行に分割する例もあり，このことを考慮すると，熟語ルビと同様に，グループルビでも，親文字とルビの組合せを考慮した分割ができることが望ましいといえよう．</b>
     </aside>
+    <aside><figure>
+        <img src="img/fig15.svg">
+        <figcaption><h6>Fig. 15</h6> Example wrapping group-ruby</figcaption>
+    </figure></aside>
     In the case of group ruby,
     the base character string and its associated ruby string
     are treated as a unit, 
@@ -521,7 +525,7 @@ Group-ruby is placed as follows:
 
 Jukugo-ruby is placed as follows:
 
-1. <aside><figure>
+1.  <aside><figure>
         <img src="img/fig16.svg">
         <figcaption><h6>Fig. 16</h6> Example 1 of jukugo-ruby</figcaption>
     </figure></aside>
