@@ -105,9 +105,9 @@ Note that the terminology is based on that defined in
 </aside>
 <aside>
     <h6>Reference size</h6>
-    Because the size of ruby characters used in JIS X 4051 set to &#xbd;
+    Because the size of ruby characters used in JIS X 4051 set to 1/2
     there are many examples that use the size of the ruby character as the reference.
-    However, since ruby is not restricted to &#xbd;,
+    However, since ruby is not restricted to 1/2,
     this document uses the size the base character as the reference.
 </aside>
 <aside>
@@ -118,7 +118,7 @@ Note that the terminology is based on that defined in
     with ruby characters of 4 points.
     Also, ruby associated with large base characters,
     such as those in titles,
-    are sometimes smaller than &#xbd;.
+    are sometimes smaller than 1/2.
 </aside>
 
 Here are the fundamental assumptions underlying the simple placement rules.
@@ -138,10 +138,10 @@ Here are the fundamental assumptions underlying the simple placement rules.
     for the ruby relative to the base string
     that does not change depending on context.
 5. Generally speaking, the processing method is based on JIS X 4051
-    (the Japanese method for text layout).
+    (Formatting rules for Japanese documents).
     However, in some cases, optional steps are used.
 6. The ruby font size is set to half of the base character's size as a default.
-    However, the method supports using different sizes than &#xbd;.
+    However, the method supports using different sizes than 1/2.
 7. While there are cases of ruby on both sides of the base string exist,
     the method defined here only handles ruby on one side.
     Handling both sides is left as a future exercise.
