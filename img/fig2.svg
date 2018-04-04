@@ -4,8 +4,8 @@
 	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
 	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
 ]>
-<svg  version="1.1" id="レイヤー_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="98.538"
-	 viewBox="0 0 65.692 140" overflow="visible" enable-background="new 0 0 65.692 165.848" xml:space="preserve">
+<svg  version="1.1" id="レイヤー_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="110.244"
+	 viewBox="0 0 73.496 135.163" overflow="visible" enable-background="new 0 0 73.496 135.163" xml:space="preserve">
 <g>
 	<path d="M19.628,24.176c0.546-0.434,0.756-0.686,1.029-1.246c-0.322-0.098-0.574-0.266-0.813-0.539
 		c-0.308-0.371-0.476-0.924-0.476-1.582c0-0.049,0-0.133,0.007-0.259c-0.56,0.623-0.917,1.386-0.917,1.946c0,0.049,0,0.091,0,0.126
@@ -339,9 +339,8 @@
 	<polyline fill="none" stroke="#008CD6" stroke-width="0.25" points="15.027,101.506 16.963,98.152 18.9,101.506 	"/>
 </g>
 <g>
-	<text fill="#008CD6" x="0" y="112" font-size="8" font-family="sans-serif" font-weight="lighter">Ruby character</text>
-	<text fill="#008CD6" x="0" y="121" font-size="8" font-family="sans-serif" font-weight="lighter">frames are set</text>
-	<text fill="#008CD6" x="0" y="130" font-size="8" font-family="sans-serif" font-weight="lighter">flush against the</text>
-	<text fill="#008CD6" x="0" y="139" font-size="8" font-family="sans-serif" font-weight="lighter">bases's frame</text>
+	<text fill="#008CD6" x="0" y="112" font-size="8" font-family="sans-serif" font-weight="lighter">Character frames</text>
+	<text fill="#008CD6" x="0" y="121" font-size="8" font-family="sans-serif" font-weight="lighter">are set flush</text>
+	<text fill="#008CD6" x="0" y="130" font-size="8" font-family="sans-serif" font-weight="lighter">against each other</text>
 </g>
 </svg>
