@@ -1,10 +1,18 @@
+---
+lang: en
+title: Rules for Simple Placement of Ruby (Draft)
+noheader: true
+nofooter: true
+stylesheet: ./ruby.css
+description: A simple set of rules for placement of Ruby text in Japanese typography.
+---
 <aside>
 2018/3/16 (Toshi <span class="name">Kobayashi</span>)<br>
 Ver. 2.3<br>
 Translation (Florian <span class="name">Rivoal</span>)<br>
 </aside>
 
-# Rules for Simple Placement of Ruby (Draft)
+# {{ page.title }}
 
 ## Table of Contents
 {:.no-toc}
@@ -499,5 +507,3 @@ Jukugo-ruby is placed as follows:
     Also, when the ruby string is longer than the base character string,
     protrudes, and is located at the start or end of the line,
     the processing is also identical to that of mono-ruby.
-
-

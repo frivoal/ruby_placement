@@ -1,7 +1,8 @@
-<!doctype html>
-<html lang=en>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 <%
 extend ::Kramdown::Utils::Html
 title = ''
@@ -11,7 +12,11 @@ if h
   title = collector.call(h)
 end
 %>
-    <title><%= title %></title>
-    <link rel="stylesheet" href="ruby.css"/>
+	<title><%= title %></title>
+	<link rel="stylesheet" href="./ruby.css">
+</head>
 
+<body>
 <%= @body %>
+</body>
+</html>
