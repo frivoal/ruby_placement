@@ -1,10 +1,10 @@
 all: html
-html: ruby.html
-ruby.html: ruby.md ruby.erb
-	kramdown --template=ruby.erb ruby.md >$@
+html: index.html
+index.html: index.md ruby.erb
+	kramdown --template=ruby.erb index.md >$@
 zip: ruby.zip
-ruby.zip: ruby.html ruby.css img/*
+ruby.zip: index.html ruby.css img/*
 	zip -9 $@ $?
 clean:
-	rm ruby.html ruby.zip
+	-rm index.html ruby.zip
 .PHONY: all zip clean html
